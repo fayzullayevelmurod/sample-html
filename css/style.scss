@@ -6,6 +6,25 @@
     list-style: none;
 }
 
+*::after,
+*::before {
+    box-sizing: inherit
+}
+
+a {
+    color: inherit
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
 .main_container {}
 
 .main_title {}
@@ -20,6 +39,7 @@
 
 // import file scss
 
-@import './scss/responsive';
+@import './scss/variables';
 @import './scss/header';
 @import './scss/footer';
+@import './scss/responsive';
